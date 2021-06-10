@@ -9,17 +9,17 @@ $statement = $pdo->prepare("SELECT * FROM doctor");
 $statement->execute();
 $total_doctor = $statement->rowCount();
 //
-//$statement = $pdo->prepare("SELECT * FROM tbl_mid_category");
-//$statement->execute();
-//$total_mid_category = $statement->rowCount();
+$statement = $pdo->prepare("SELECT * FROM clinic");
+$statement->execute();
+$total_clinic = $statement->rowCount();
 //
-//$statement = $pdo->prepare("SELECT * FROM tbl_end_category");
-//$statement->execute();
-//$total_end_category = $statement->rowCount();
+$statement = $pdo->prepare("SELECT * FROM signup");
+$statement->execute();
+$total_user = $statement->rowCount();
 //
-//$statement = $pdo->prepare("SELECT * FROM tbl_product");
-//$statement->execute();
-//$total_product = $statement->rowCount();
+$statement = $pdo->prepare("SELECT * FROM manager");
+$statement->execute();
+$total_manager = $statement->rowCount();
 //
 //$statement = $pdo->prepare("SELECT * FROM tbl_payment WHERE payment_status=?");
 //$statement->execute(array('Completed'));
@@ -54,7 +54,7 @@ $total_doctor = $statement->rowCount();
 				<span class="info-box-icon bg-red"><i class="fa fa-hand-o-right"></i></span>
 				<div class="info-box-content">
 					<span class="info-box-text">Total Clinic</span>
-					<span class="info-box-number"><?php echo $total_mid_category; ?></span>
+					<span class="info-box-number"><?php echo $total_clinic; ?></span>
 				</div>
 			</div>
 		</div>
@@ -63,7 +63,7 @@ $total_doctor = $statement->rowCount();
 				<span class="info-box-icon bg-olive"><i class="fa fa-hand-o-right"></i></span>
 				<div class="info-box-content">
 					<span class="info-box-text">Total Managers</span>
-					<span class="info-box-number"><?php echo $total_end_category; ?></span>
+					<span class="info-box-number"><?php echo $total_manager; ?></span>
 				</div>
 			</div>
 		</div>
@@ -72,7 +72,7 @@ $total_doctor = $statement->rowCount();
 				<span class="info-box-icon bg-purple"><i class="fa fa-hand-o-right"></i></span>
 				<div class="info-box-content">
 					<span class="info-box-text">Total Users</span>
-					<span class="info-box-number"><?php echo $total_product; ?></span>
+					<span class="info-box-number"><?php echo $total_user; ?></span>
 				</div>
 			</div>
 		</div>

@@ -22,7 +22,7 @@ $success_message1 = '';
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Admin Panel</title>
+	<title>Admin Panel -- Doctor On</title>
 
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -89,11 +89,11 @@ $success_message1 = '';
       
       			<ul class="sidebar-menu skin-yellow">
 
-			        <li class="treeview <?php if($cur_page == 'mainpage.php') {echo 'active';} ?>">
-			          <a href="mainpage.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Dashboard</span>
-			          </a>
-			        </li>
+<!--			        <li class="treeview --><?php //if($cur_page == 'mainpage.php') {echo 'active';} ?><!--">-->
+<!--			          <a href="mainpage.php">-->
+<!--			            <i class="fa fa-hand-o-right"></i> <span>Dashboard</span>-->
+<!--			          </a>-->
+<!--			        </li>-->
 
 
                     <li class="treeview <?php if( ($cur_page == 'add_doctor.php') ) {echo 'active';} ?>">
@@ -120,27 +120,27 @@ $success_message1 = '';
                         </a>
                     </li>
 
-                    <li class="treeview <?php if( ($cur_page == 'subscriber.php')||($cur_page == 'subscriber.php') ) {echo 'active';} ?>">
-                        <a href="subscriber.php">
-                            <i class="fa fa-hand-o-right"></i> <span>Add manager</span>
+                    <li class="treeview <?php if( ($cur_page == 'add_manager.php') ) {echo 'active';} ?>">
+                        <a href="add_manager.php">
+                            <i class="fa fa-hand-o-right"></i> <span>Add Manager</span>
                         </a>
                     </li>
 
-                    <li class="treeview <?php if( ($cur_page == 'subscriber.php')||($cur_page == 'subscriber.php') ) {echo 'active';} ?>">
-                        <a href="subscriber.php">
-                            <i class="fa fa-hand-o-right"></i> <span>Show manager</span>
+                    <li class="treeview <?php if( ($cur_page == 'show_manager.php') ) {echo 'active';} ?>">
+                        <a href="show_manager.php">
+                            <i class="fa fa-hand-o-right"></i> <span>Show Manager</span>
                         </a>
                     </li>
 
 			        <li class="treeview <?php if( ($cur_page == 'page.php') ) {echo 'active';} ?>">
 			          <a href="page.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Assign Doc to Clinic</span>
+			            <i class="fa fa-hand-o-right"></i> <span>Assign Doctor to Clinic</span>
 			          </a>
 			        </li>
 
 			        <li class="treeview <?php if( ($cur_page == 'social-media.php') ) {echo 'active';} ?>">
 			          <a href="social-media.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Delete Doc to Clinic</span>
+			            <i class="fa fa-hand-o-right"></i> <span>Delete Doctor to Clinic</span>
 			          </a>
 			        </li>
 
