@@ -2,7 +2,7 @@
 
 <section class="content-header">
     <div class="content-header-left">
-        <h1>All Doctor Details</h1>
+        <h1>All Clinic Details</h1>
     </div>
 </section>
 
@@ -16,15 +16,10 @@
                         <tr>
                             <th width="30">SL</th>
                             <th width="180">Name</th>
-                            <th width="80">Gender</th>
-                            <th width="180">DOB</th>
-                            <th width="100">Experience</th>
-                            <th width="180">Specialization</th>
-                            <th width="180">Contact</th>
                             <th width="180">Address</th>
-                            <th width="180">Username</th>
-                            <th width="100">Password</th>
-                            <th width="100">Region</th>
+                            <th width="180">Town</th>
+                            <th width="180">City</th>
+                            <th width="180">Contact</th>
                             <th width="100">Delete</th>
 
 
@@ -33,7 +28,7 @@
                         <tbody>
                         <?php
                         $i=0;
-                        $statement = $pdo->prepare("SELECT * FROM Doctor order by DID ASC");
+                        $statement = $pdo->prepare("SELECT * FROM clinic order by cid ASC");
                         $statement->execute();
                         $result = $statement->fetchAll(PDO::FETCH_ASSOC);
                         foreach ($result as $row) {
@@ -42,26 +37,20 @@
 
 
 
-<!--                            <tr class="--><?php //if($row['cust_status']==1) {echo 'bg-g';}else {echo 'bg-r';} ?><!--">-->
-                                <tr>
-                                    <td><?php echo $row['did']; ?></td>
-                                    <td><?php echo $row['name']; ?></td>
-                                    <td><?php echo $row['gender']; ?></td>
-                                    <td><?php echo $row['dob']; ?></td>
-                                    <td><?php echo $row['experience']; ?></td>
-                                    <td><?php echo $row['specialization']; ?></td>
-                                    <td><?php echo $row['contact']; ?></td>
-                                    <td><?php echo $row['address']; ?></td>
-                                    <td><?php echo $row['username']; ?></td>
-                                    <td><?php echo $row['password']; ?></td>
-                                    <td><?php echo $row['region']; ?></td>
-
-<!--                                <td>--><?php //if($row['cust_status']==1) {echo 'Active';} else {echo 'Inactive';} ?><!--</td>-->
-<!--                                <td>-->
-<!--                                    <a href="customer-change-status.php?id=--><?php //echo $row['cust_id']; ?><!--" class="btn btn-success btn-xs">Change Status</a>-->
-<!--                                </td>-->
+                            <!--                            <tr class="--><?php //if($row['cust_status']==1) {echo 'bg-g';}else {echo 'bg-r';} ?><!--">-->
+                            <tr>
+                                <td><?php echo $row['cid']; ?></td>
+                                <td><?php echo $row['name']; ?></td>
+                                <td><?php echo $row['address']; ?></td>
+                                <td><?php echo $row['town']; ?></td>
+                                <td><?php echo $row['city']; ?></td>
+                                <td><?php echo $row['contact']; ?></td>
+                                <!--                                <td>--><?php //if($row['cust_status']==1) {echo 'Active';} else {echo 'Inactive';} ?><!--</td>-->
+                                <!--                                <td>-->
+                                <!--                                    <a href="customer-change-status.php?id=--><?php //echo $row['cust_id']; ?><!--" class="btn btn-success btn-xs">Change Status</a>-->
+                                <!--                                </td>-->
                                 <td>
-                                    <a href="#" class="btn btn-danger btn-xs" data-href="customer-delete.php?id=<?php echo $row['did']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-href="customer-delete.php?id=<?php echo $row['cid']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
                                 </td>
                             </tr>
                             <?php

@@ -183,9 +183,9 @@ if(isset($_POST['submit']))
                 $sql="INSERT INTO doctor(name, gender, dob, experience, specialization, contact, address, username, password, region) VALUES('$name','$gender','$dob', '$experience', '$specialization', '$contact', '$address', '$username', '$password', '$region')";
                 mysqli_query($db,$sql);
                 //$_SESSION['email']=$email;
-                print_r($sql);
+                //print_r($sql);
                 //print_r($password);
-                //header("location:add_doctor.php");  //redirect index page
+                header("location:add_doctor.php");  //redirect index page
 
         }
     }

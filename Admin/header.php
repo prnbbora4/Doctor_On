@@ -48,7 +48,7 @@ $success_message1 = '';
 
 		<header class="main-header">
 
-			<a href="index.php" class="logo">
+			<a href="mainpage.php" class="logo">
 				<span class="logo-lg">Doctor On</span>
 			</a>
 
@@ -108,14 +108,14 @@ $success_message1 = '';
 			          </a>
 			        </li>
 
-                    <li class="treeview <?php if( ($cur_page == 'faq.php') ) {echo 'active';} ?>">
-			          <a href="faq.php">
+                    <li class="treeview <?php if( ($cur_page == 'add_clinic.php') ) {echo 'active';} ?>">
+			          <a href="add_clinic.php">
 			            <i class="fa fa-hand-o-right"></i> <span>Add Clinic</span>
 			          </a>
 			        </li>
 
-                    <li class="treeview <?php if( ($cur_page == 'customer.php') || ($cur_page == 'customer-add.php') || ($cur_page == 'customer-edit.php') ) {echo 'active';} ?>">
-                        <a href="customer.php">
+                    <li class="treeview <?php if( ($cur_page == 'show_clinic.php') ) {echo 'active';} ?>">
+                        <a href="show_clinic.php">
                             <i class="fa fa-hand-o-right"></i> <span>Show Clinic</span>
                         </a>
                     </li>
