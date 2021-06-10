@@ -89,8 +89,8 @@ $success_message1 = '';
       
       			<ul class="sidebar-menu skin-yellow">
 
-			        <li class="treeview <?php if($cur_page == 'index.php') {echo 'active';} ?>">
-			          <a href="index.php">
+			        <li class="treeview <?php if($cur_page == 'mainpage.php') {echo 'active';} ?>">
+			          <a href="mainpage.php">
 			            <i class="fa fa-hand-o-right"></i> <span>Dashboard</span>
 			          </a>
 			        </li>
@@ -102,28 +102,15 @@ $success_message1 = '';
                         </a>
                     </li>
 
-
-                     <li class="treeview <?php if( ($cur_page == 'slider.php') ) {echo 'active';} ?>">
-			          <a href="slider.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Delete Doctor</span>
-			          </a>
-			        </li>
-                    <!-- Icons to be displayed on Shop -->
-			        <li class="treeview <?php if( ($cur_page == 'service.php') ) {echo 'active';} ?>">
-			          <a href="service.php">
+			        <li class="treeview <?php if( ($cur_page == 'show_doctor.php') ) {echo 'active';} ?>">
+			          <a href="show_doctor.php">
 			            <i class="fa fa-hand-o-right"></i> <span>Show Doctors</span>
 			          </a>
 			        </li>
 
-			      			        <li class="treeview <?php if( ($cur_page == 'faq.php') ) {echo 'active';} ?>">
+                    <li class="treeview <?php if( ($cur_page == 'faq.php') ) {echo 'active';} ?>">
 			          <a href="faq.php">
 			            <i class="fa fa-hand-o-right"></i> <span>Add Clinic</span>
-			          </a>
-			        </li>
-
-						<li class="treeview <?php if( ($cur_page == 'customer.php') || ($cur_page == 'customer-add.php') || ($cur_page == 'customer-edit.php') ) {echo 'active';} ?>">
-			          <a href="customer.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Delete Clinic</span>
 			          </a>
 			        </li>
 
@@ -136,12 +123,6 @@ $success_message1 = '';
                     <li class="treeview <?php if( ($cur_page == 'subscriber.php')||($cur_page == 'subscriber.php') ) {echo 'active';} ?>">
                         <a href="subscriber.php">
                             <i class="fa fa-hand-o-right"></i> <span>Add manager</span>
-                        </a>
-                    </li>
-
-                    <li class="treeview <?php if( ($cur_page == 'subscriber.php')||($cur_page == 'subscriber.php') ) {echo 'active';} ?>">
-                        <a href="subscriber.php">
-                            <i class="fa fa-hand-o-right"></i> <span>Delete manager</span>
                         </a>
                     </li>
 

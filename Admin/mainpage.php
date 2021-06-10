@@ -5,9 +5,9 @@
 </section>
 
 <?php
-//$statement = $pdo->prepare("SELECT * FROM tbl_top_category");
-//$statement->execute();
-//$total_top_category = $statement->rowCount();
+$statement = $pdo->prepare("SELECT * FROM doctor");
+$statement->execute();
+$total_doctor = $statement->rowCount();
 //
 //$statement = $pdo->prepare("SELECT * FROM tbl_mid_category");
 //$statement->execute();
@@ -45,7 +45,7 @@
 				<span class="info-box-icon bg-aqua"><i class="fa fa-hand-o-right"></i></span>
 				<div class="info-box-content">
 					<span class="info-box-text">Total Doctors</span>
-					<span class="info-box-number"> <?php echo $total_top_category; ?></span>
+					<span class="info-box-number"> <?php echo $total_doctor; ?></span>
 				</div>
 			</div>
 		</div>
